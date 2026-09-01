@@ -1,0 +1,11 @@
+# Service entries shown on the homepage Service section.
+# Add one item per role — newest first. `year` can be a single year ("2026")
+# or a range ("2024-2026").
+#
+# - role: Reviewer
+#   org: NeurIPS
+#   year: "2026"
+
+- role: "[FILL IN] Reviewer"
+  org: "[Conference / Journal name]"
+  year: "2026"

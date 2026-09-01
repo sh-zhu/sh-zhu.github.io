@@ -1,0 +1,98 @@
+<div class="social-links">
+  {% for social in site.data.socials %}
+    {% case social[0] %}
+      {% when 'acm_id' %}
+        <a href="https://dl.acm.org/profile/{{ social[1] }}/">ACM DL</a>
+      {% when 'blogger_url' %}
+        <a href="{{ social[1] }}">Blog</a>
+      {% when 'bluesky_url' %}
+        <a href="{{ social[1] }}">Bluesky</a>
+      {% when 'dblp_url' %}
+        <a href="{{ social[1] }}">DBLP</a>
+      {% when 'discord_id' %}
+        <a href="https://discord.com/users/{{ social[1] }}">Discord</a>
+      {% when 'email' %}
+        <a href="mailto:{{ social[1] | encode_email }}">Email</a>
+      {% when 'facebook_id' %}
+        <a href="https://facebook.com/{{ social[1] }}">Facebook</a>
+      {% when 'flickr_id' %}
+        <a href="https://www.flickr.com/{{ social[1] }}">Flickr</a>
+      {% when 'github_username' %}
+        <a href="https://github.com/{{ social[1] }}">GitHub</a>
+      {% when 'gitlab_username' %}
+        <a href="https://gitlab.com/{{ social[1] }}">GitLab</a>
+      {% when 'hal_id' %}
+        <a href="https://cv.hal.science/{{ social[1] }}/">HAL</a>
+      {% when 'ieee_id' %}
+        <a href="https://ieeexplore.ieee.org/author/{{ social[1] }}/">IEEE Xplore</a>
+      {% when 'inspirehep_id' %}
+        <a href="https://inspirehep.net/authors/{{ social[1] }}">Inspire HEP</a>
+      {% when 'instagram_id' %}
+        <a href="https://instagram.com/{{ social[1] }}">Instagram</a>
+      {% when 'kaggle_id' %}
+        <a href="https://www.kaggle.com/{{ social[1] }}">Kaggle</a>
+      {% when 'keybase_username' %}
+        <a href="https://keybase.io/{{ social[1] }}">Keybase</a>
+      {% when 'lastfm_id' %}
+        <a href="https://www.last.fm/user/{{ social[1] }}">Last.fm</a>
+      {% when 'lattes_id' %}
+        <a href="http://lattes.cnpq.br/{{ social[1] }}">Lattes</a>
+      {% when 'leetcode_id' %}
+        <a href="https://leetcode.com/u/{{ social[1] }}/">LeetCode</a>
+      {% when 'linkedin_username' %}
+        <a href="https://www.linkedin.com/in/{{ social[1] }}">LinkedIn</a>
+      {% when 'mastodon_username' %}
+        <a rel="me" href="https://{{ social[1] }}">Mastodon</a>
+      {% when 'medium_username' %}
+        <a href="https://medium.com/@{{ social[1] }}">Medium</a>
+      {% when 'orcid_id' %}
+        <a href="https://orcid.org/{{ social[1] }}">ORCID</a>
+      {% when 'osf_id' %}
+        <a href="https://osf.io/{{ social[1] }}/">OSF</a>
+      {% when 'pinterest_id' %}
+        <a href="https://www.pinterest.com/{{ social[1] }}">Pinterest</a>
+      {% when 'publons_id' %}
+        <a href="https://publons.com/a/{{ social[1] }}/">Publons</a>
+      {% when 'quora_username' %}
+        <a href="https://www.quora.com/profile/{{ social[1] }}">Quora</a>
+      {% when 'research_gate_profile' %}
+        <a href="https://www.researchgate.net/profile/{{ social[1] }}/">ResearchGate</a>
+      {% when 'rss_icon' %}
+        <a href="{{ '/feed.xml' | relative_url }}">RSS</a>
+      {% when 'scholar_userid' %}
+        <a href="https://scholar.google.com/citations?user={{ social[1] }}">Google Scholar</a>
+      {% when 'scopus_id' %}
+        <a href="https://www.scopus.com/authid/detail.uri?authorId={{ social[1] }}">Scopus</a>
+      {% when 'semanticscholar_id' %}
+        <a href="https://www.semanticscholar.org/author/{{ social[1] }}">Semantic Scholar</a>
+      {% when 'spotify_id' %}
+        <a href="https://open.spotify.com/user/{{ social[1] }}">Spotify</a>
+      {% when 'stackoverflow_id' %}
+        <a href="https://stackoverflow.com/users/{{ social[1] }}">Stack Overflow</a>
+      {% when 'strava_userid' %}
+        <a href="https://www.strava.com/athletes/{{ social[1] }}">Strava</a>
+      {% when 'telegram_username' %}
+        <a href="https://telegram.me/{{ social[1] }}">Telegram</a>
+      {% when 'unsplash_id' %}
+        <a href="https://unsplash.com/@{{ social[1] }}">Unsplash</a>
+      {% when 'whatsapp_number' %}
+        <a href="https://wa.me/{{ social[1] }}">WhatsApp</a>
+      {% when 'wikidata_id' %}
+        <a href="https://www.wikidata.org/wiki/{{ social[1] }}">Wikidata</a>
+      {% when 'wikipedia_id' %}
+        <a href="https://wikipedia.org/wiki/User:{{ social[1] }}">Wikipedia</a>
+      {% when 'work_url' %}
+        <a href="{{ social[1] }}">Work</a>
+      {% when 'x_username' %}
+        <a href="https://twitter.com/{{ social[1] }}">X</a>
+      {% when 'youtube_id' %}
+        <a href="https://youtube.com/@{{ social[1] }}">YouTube</a>
+      {% when 'zotero_username' %}
+        <a href="https://www.zotero.org/{{ social[1] }}">Zotero</a>
+      {% when 'wechat_qr' %}
+        <!-- WeChat QR intentionally skipped in the minimal social row -->
+      {% else %}
+        <a href="{{ social[1].url }}">{{ social[1].title }}</a>
+    {% endcase %}
+  {% endfor %}
+</div>
