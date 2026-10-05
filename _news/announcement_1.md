@@ -1,8 +1,8 @@
 ---
 layout: post
-date: 2026-01-01 00:00:00-0000
+date: 2026-10-05 00:00:00+0200
 inline: true
 related_posts: false
 ---
 
-[FILL IN] Example news item — one line, e.g. "Our paper on X was accepted to Y!"
+Launched my personal website, featuring my research, publications, and academic activities.
