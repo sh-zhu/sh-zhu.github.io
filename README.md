@@ -39,3 +39,9 @@ Then open http://localhost:4000.
 
 Pushing to `main` triggers `.github/workflows/deploy.yml`, which builds the
 site and publishes it to GitHub Pages.
+
+## Acknowledgements
+
+This site is adapted from [al-folio](https://github.com/alshedivat/al-folio) by
+Maruan Al-Shedivat and contributors, released under the MIT License. The
+original copyright notice is kept in [LICENSE](LICENSE).

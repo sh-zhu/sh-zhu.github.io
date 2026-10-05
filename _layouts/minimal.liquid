@@ -27,7 +27,7 @@
   {% endif %}
 
   <link rel="canonical" href="{{ page.url | replace: 'index.html', '' | absolute_url }}">
-  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}">
+  <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url | bust_file_cache }}">
   <script>
     // Apply the saved or OS theme before the page paints, so there is no flash.
     (function () {
@@ -65,6 +65,7 @@
   <footer class="site-footer">
     <span>&copy; {{ 'now' | date: '%Y' }} {{ site.first_name }} {{ site.last_name }}</span>
     {% if site.last_updated %}<span> · Last updated {{ site.time | date: '%b %-d, %Y' }}</span>{% endif %}
+    <span> · Built with <a href="https://jekyllrb.com/">Jekyll</a>, adapted from <a href="https://github.com/alshedivat/al-folio">al-folio</a>.</span>
   </footer>
 
   <script>

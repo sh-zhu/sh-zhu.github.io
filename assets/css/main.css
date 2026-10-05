@@ -453,3 +453,13 @@ section {
   color: var(--muted);
   font-size: 0.82rem;
 }
+
+.site-footer a {
+  color: var(--muted);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.site-footer a:hover {
+  color: var(--accent);
+}
