@@ -3,7 +3,7 @@ layout: minimal
 permalink: /
 title: about
 description: >
-  [FILL IN] one-sentence description of who you are, used for link previews and search results.
+  Shuai Zhu is a Research Engineer at RISE Research Institutes of Sweden and an industrial PhD student at Uppsala University, working on embedded AI and IoT networks.
 ---
 
 <section id="about">
@@ -11,12 +11,15 @@ description: >
     <img class="about-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">
     <div class="about-body">
       <h1>{{ site.first_name }} {{ site.last_name }}</h1>
-      <p class="about-affiliation">[FILL IN: title/position], [FILL IN: institution]</p>
+      <p class="about-affiliation">Research Engineer, RISE Research Institutes of Sweden<br>Industrial PhD Student, Uppsala University</p>
       <p class="about-bio">
-        [FILL IN] Write one paragraph covering who you are, your position, and your
-        research interests — e.g. "I am a PhD student at &lt;institution&gt; working on
-        &lt;research area&gt;. My research focuses on &lt;specific problems/methods&gt;.
-        Before that, I &lt;brief background&gt;." Keep it to 3-5 sentences.
+        I am a Research Engineer at RISE Research Institutes of Sweden and an industrial
+        PhD student at Uppsala University, supervised by Prof. Thiemo Voigt, Prof. JeongGil Ko,
+        and Dr. Fatemeh Rahimian. My research focuses on embedded AI and IoT networks. Before my PhD, I spent three years
+        in industry as an Android engineer, working on both application development and the
+        Android platform. I hold a double master's degree from KTH Royal Institute of
+        Technology, Sweden, and Aalto University, Finland, and a bachelor's degree from
+        Southeast University, China.
       </p>
       {% include social_links.liquid %}
     </div>
