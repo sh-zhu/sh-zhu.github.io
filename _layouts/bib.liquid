@@ -40,7 +40,7 @@
       {%- elsif thesis contains entry.type -%}
         {{ entry.school }}
       {%- endif -%}
-      {% if entry.year %}, {{ entry.year }}{% endif %}
+      {%- if entry.type == 'article' and entry.year %}, {{ entry.year }}{% endif -%}
     </div>
 
     <div class="pub-links">
