@@ -6,6 +6,6 @@
 #   org: NeurIPS
 #   year: "2026"
 
-- role: "[FILL IN] Reviewer"
-  org: "[Conference / Journal name]"
-  year: "2026"
+- role: Reviewer
+  org: IEEE Internet of Things Journal
+  year: "2025"

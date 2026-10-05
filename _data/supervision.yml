@@ -1,0 +1,10 @@
+# Supervision entries shown on the homepage Supervision section — newest first.
+# Fields: title (required), detail (optional, shown as a muted second line), year.
+
+- title: "Resource-aware Online Learning for Resource-constrained 6G Ambient IoT Devices"
+  detail: "Master's thesis supervision · RISE · Funded by Vinnova, ~100k SEK (PI)"
+  year: "2025"
+
+- title: "Online Learning for Resource-constrained 6G Ambient IoT Devices"
+  detail: "Master's thesis supervision · RISE · Funded by Vinnova, ~100k SEK (PI)"
+  year: "2024"

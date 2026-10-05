@@ -36,6 +36,21 @@ description: >
   {% bibliography %}
 </section>
 
+<section id="supervision">
+  <h2 class="section-label">Supervision</h2>
+  <ul class="service-list">
+    {% for item in site.data.supervision %}
+      <li>
+        <span>
+          {{ item.title }}
+          {% if item.detail %}<span class="service-detail">{{ item.detail }}</span>{% endif %}
+        </span>
+        <span class="service-year">{{ item.year }}</span>
+      </li>
+    {% endfor %}
+  </ul>
+</section>
+
 <section id="service">
   <h2 class="section-label">Service</h2>
   <ul class="service-list">

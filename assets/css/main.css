@@ -252,8 +252,9 @@ section {
 
 .pub-tag {
   flex: none;
-  width: 4.5rem;
+  width: 6rem;
   height: 1.6rem;
+  white-space: nowrap;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -327,6 +328,13 @@ section {
 
 .service-list li:last-child {
   border-bottom: none;
+}
+
+.service-detail {
+  display: block;
+  margin-top: 0.15rem;
+  color: var(--muted);
+  font-size: 0.85rem;
 }
 
 .service-year {
