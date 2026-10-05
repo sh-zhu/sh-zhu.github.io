@@ -8,7 +8,10 @@ description: >
 
 <section id="about">
   <div class="about">
-    <img class="about-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">
+    <div class="about-side">
+      <img class="about-photo" src="{{ '/assets/img/prof_pic.jpg' | relative_url }}" alt="{{ site.first_name }} {{ site.last_name }}">
+      {% include social_links.liquid %}
+    </div>
     <div class="about-body">
       <h1>{{ site.first_name }} {{ site.last_name }}</h1>
       <p class="about-affiliation">Research Engineer, RISE Research Institutes of Sweden<br>Industrial PhD Student, Uppsala University</p>
@@ -21,7 +24,6 @@ description: >
         Technology, Sweden, and Aalto University, Finland, and a bachelor's degree from
         Southeast University, China.
       </p>
-      {% include social_links.liquid %}
     </div>
   </div>
 </section>

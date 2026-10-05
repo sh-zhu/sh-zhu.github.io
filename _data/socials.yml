@@ -21,7 +21,6 @@
 # lastfm_id: # your lastfm id
 # lattes_id: # your ID on Lattes (Brazilian Lattes CV)
 # leetcode_id: # your LeetCode id
-# linkedin_username: # your LinkedIn user name
 # mastodon_username: # your mastodon instance+username in the format instance.tld/@username
 # medium_username: # your Medium username
 # orcid_id: # your ORCID ID
@@ -31,7 +30,6 @@
 # quora_username: # your Quora username
 # research_gate_profile: # your profile on ResearchGate
 # rss_icon: true # no blog/feed configured on this site — leave commented unless you add one
-# scholar_userid: # [FILL IN] your Google Scholar ID
 # scopus_id: # your profile on Scopus
 # semanticscholar_id: # your Semantic Scholar ID
 # spotify_id: # your spotify id
@@ -51,3 +49,7 @@
 #   logo: https://example.com/icon.png # can be png, svg, jpg
 #   title: Custom Social
 #   url: https://example.com/
+
+# Active links (shown in this order)
+scholar_userid: dnJLd6MAAAAJ
+linkedin_username: sh-zhu
